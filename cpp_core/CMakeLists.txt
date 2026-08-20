@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(BiliCommander VERSION 2.0 LANGUAGES CXX)
+project(KAZUSA_BILIDOWN VERSION 2.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,7 +13,7 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Quick Qml Network)
 
-add_executable(BiliCommander
+add_executable(KAZUSA_BILIDOWN
     main_qml.cpp
     app.rc
     qml_resources.qrc
@@ -45,9 +45,9 @@ add_executable(BiliCommander
     glue/FluTheme.hpp
 )
 
-target_include_directories(BiliCommander PRIVATE . glue)
+target_include_directories(KAZUSA_BILIDOWN PRIVATE . glue)
 
-target_link_libraries(BiliCommander PRIVATE
+target_link_libraries(KAZUSA_BILIDOWN PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Quick

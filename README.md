@@ -84,7 +84,7 @@ cmake --build build
 
 # 3. 运行程序
 cd build
-./BiliCommander.exe
+./KAZUSA_BILIDOWN.exe
 ```
 
 ## 开发者
