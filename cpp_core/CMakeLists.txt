@@ -59,6 +59,11 @@ target_link_libraries(KAZUSA_BILIDOWN PRIVATE
     bento4
 )
 
+# 隐藏控制台窗口: 链接为 Windows GUI 子系统 (Subsystem:WINDOWS), 日志走 bili_ui.log
+if(WIN32 AND MSVC)
+    target_link_options(KAZUSA_BILIDOWN PRIVATE /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup)
+endif()
+
 # 无头下载链路端到端验证工具 (驱动与 GUI 相同的 BiliController)
 add_executable(BiliChainTest
     test_chain.cpp
