@@ -40,7 +40,7 @@ Item {
             anchors.topMargin: 20
             spacing: 8
 
-            // 1. kazusa. 极简工业风品牌状态卡片
+            // 1. kazusa. 极简工业风品牌卡片 (打磨升级版)
             FluCard {
                 width: parent.width
                 implicitHeight: 46
@@ -53,7 +53,7 @@ Item {
 
                     // 1. 左侧标题栏: 绝对坐标锁定 (x: 0 放图标, x: 26 放文字)
                     Item {
-                        Layout.preferredWidth: 110
+                        Layout.preferredWidth: 104
                         Layout.fillHeight: true
 
                         // 16x16 App 图标 (绝对 x: 0)
@@ -74,7 +74,7 @@ Item {
                             }
                         }
 
-                        // 品牌名 (绝对 x: 26, 与下方所有汉字绝对 100% 垂直重合)
+                        // 品牌名 kazusa. (绝对 x: 26, 与下方所有汉字绝对 100% 垂直重合)
                         Row {
                             x: 26
                             anchors.verticalCenter: parent.verticalCenter
@@ -100,45 +100,30 @@ Item {
                         }
                     }
 
-                    // 2. 技术栈微标识 (Engine • Native C++ / QML)
-                    RowLayout {
-                        spacing: 8
+                    // 2. 开发者与项目介绍 (与 kazusa. 完全相同的高清纯白粗体样式与字号)
+                    Text {
+                        text: "由 Wh1te 使用 C++ / Qt 开发的哔哩哔哩下载器"
+                        color: FluTheme.textPrimary
+                        font.pixelSize: 14
+                        font.bold: true
+                        font.family: FluTheme.fontTitle
+                        verticalAlignment: Text.AlignVCenter
                         Layout.alignment: Qt.AlignVCenter
-
-                        Text {
-                            text: "Engine"
-                            color: FluTheme.textSecondary
-                            font.pixelSize: 12
-                            font.family: FluTheme.fontBody
-                        }
-
-                        Text {
-                            text: "•"
-                            color: FluTheme.textDisabled
-                            font.pixelSize: 11
-                            font.family: FluTheme.fontBody
-                        }
-
-                        Text {
-                            text: "Native C++ / QML"
-                            color: FluTheme.textSecondary
-                            font.pixelSize: 12
-                            font.family: FluTheme.fontBody
-                        }
+                        elide: Text.ElideRight
                     }
 
                     Item { Layout.fillWidth: true }
 
-                    // 3. 右侧外链纯图标胶囊 (↗ 零废字)
+                    // 3. 右侧外链纯图标胶囊 (↗ 跳转 Wh1te11 B站个人主页)
                     FluPillButton {
                         iconName: "external_link"
-                        toolTip: "访问 KAZUSA 开源项目仓库 / 文档"
+                        toolTip: "访问 Wh1te 哔哩哔哩个人主页"
                         isFilled: false
                         implicitWidth: 28
                         implicitHeight: 28
                         themeColor: FluTheme.primaryColor
                         Layout.alignment: Qt.AlignVCenter
-                        onClicked: Qt.openUrlExternally("https://github.com")
+                        onClicked: Qt.openUrlExternally("https://space.bilibili.com/551898501?spm_id_from=333.788.0.0")
                     }
                 }
             }

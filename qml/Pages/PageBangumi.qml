@@ -227,7 +227,7 @@ Item {
                     color: FluTheme.primaryColor
                     Layout.alignment: Qt.AlignVCenter
 
-                    scale: parseBtnMa.pressed ? 0.92 : (parseBtnMa.containsMouse ? 1.05 : 1.0)
+                    scale: parseBtnMa.pressed ? 0.94 : 1.0
                     Behavior on scale { NumberAnimation { duration: FluTheme.durationFast; easing.type: Easing.OutCubic } }
                     Behavior on opacity { NumberAnimation { duration: FluTheme.durationFast } }
 
@@ -382,7 +382,7 @@ Item {
                         border.color: Qt.rgba(255, 255, 255, 0.25)
                         border.width: 1
 
-                        scale: backMa.pressed ? 0.9 : (backMa.containsMouse ? 1.08 : 1.0)
+                        scale: backMa.pressed ? 0.92 : 1.0
                         Behavior on scale { NumberAnimation { duration: FluTheme.durationFast; easing.type: Easing.OutCubic } }
                         Behavior on color { ColorAnimation { duration: FluTheme.durationFast } }
 

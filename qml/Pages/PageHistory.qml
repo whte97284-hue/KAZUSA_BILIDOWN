@@ -148,7 +148,7 @@ Item {
             opacity: clearMa.containsMouse ? 1.0 : 0.65
             z: 30
 
-            scale: clearMa.pressed ? 0.92 : (clearMa.containsMouse ? 1.08 : 1.0)
+            scale: clearMa.pressed ? 0.92 : 1.0
             Behavior on scale { NumberAnimation { duration: FluTheme.durationFast; easing.type: Easing.OutCubic } }
             Behavior on opacity { NumberAnimation { duration: FluTheme.durationFast } }
             Behavior on color { ColorAnimation { duration: FluTheme.durationFast } }

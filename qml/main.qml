@@ -7,7 +7,7 @@ import "Pages"
 
 Window {
     id: rootWindow
-    title: "KAZUSA"
+    title: "KAZUSA BILIDOWN"
     // 折中尺寸: 介于 640×480 迷你态与 1120×720 大窗之间, 兼顾观感与内容展示
     width: 900
     height: 600

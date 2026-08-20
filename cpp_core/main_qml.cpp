@@ -36,10 +36,10 @@ int main(int argc, char *argv[]) {
     qputenv("QT_QUICK_CONTROLS_STYLE", "Basic");
     QGuiApplication app(argc, argv);
 #ifdef _WIN32
-    SetCurrentProcessExplicitAppUserModelID(L"KAZUSA.Commander.Bilibili.App.2.0");
+    SetCurrentProcessExplicitAppUserModelID(L"KAZUSA.BiliDown.App.2.0");
 #endif
     app.setOrganizationName("KAZUSA");
-    app.setApplicationName("KAZUSA");
+    app.setApplicationName("KAZUSA BILIDOWN");
     app.setWindowIcon(QIcon(":/kazusa.ico"));
 
     // C++ 控制器与主题单例 (先于 engine 构造, 保证销毁顺序在其后)
@@ -59,8 +59,8 @@ int main(int argc, char *argv[]) {
     engine.rootContext()->setContextProperty("biliController", &controller);
 
     // 注册 QML 识别的模型类
-    qmlRegisterType<VideoTrackModel>("BiliCommander", 1, 0, "VideoTrackModel");
-    qmlRegisterType<VideoPageModel>("BiliCommander", 1, 0, "VideoPageModel");
+    qmlRegisterType<VideoTrackModel>("KAZUSA", 1, 0, "VideoTrackModel");
+    qmlRegisterType<VideoPageModel>("KAZUSA", 1, 0, "VideoPageModel");
 
     // 加载 QML 界面: qrc 内嵌资源优先, 失败则回退到本地 qml/ 目录 (开发模式)
     bool loaded = false;
