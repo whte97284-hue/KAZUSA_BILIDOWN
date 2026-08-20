@@ -1,0 +1,37 @@
+<RCC>
+    <!-- BiliCommander QML 界面资源: 内嵌为单文件分发, 与运行目录无关 -->
+    <qresource prefix="/">
+        <file alias="qml/main.qml">../qml/main.qml</file>
+        <file alias="qml/qmldir">../qml/qmldir</file>
+        <file alias="qml/Components/BiliIcon.qml">../qml/Components/BiliIcon.qml</file>
+        <file alias="qml/Components/BiliAvatar.qml">../qml/Components/BiliAvatar.qml</file>
+        <file alias="qml/Components/FluBadge.qml">../qml/Components/FluBadge.qml</file>
+        <file alias="qml/Components/FluButton.qml">../qml/Components/FluButton.qml</file>
+        <file alias="qml/Components/FluCard.qml">../qml/Components/FluCard.qml</file>
+        <file alias="qml/Components/FluComboBox.qml">../qml/Components/FluComboBox.qml</file>
+        <file alias="qml/Components/FluContentDialog.qml">../qml/Components/FluContentDialog.qml</file>
+        <file alias="qml/Components/FluFilledButton.qml">../qml/Components/FluFilledButton.qml</file>
+        <file alias="qml/Components/FluNavigationView.qml">../qml/Components/FluNavigationView.qml</file>
+        <file alias="qml/Components/FluPill.qml">../qml/Components/FluPill.qml</file>
+        <file alias="qml/Components/FluPillButton.qml">../qml/Components/FluPillButton.qml</file>
+        <file alias="qml/Components/FluProgressBar.qml">../qml/Components/FluProgressBar.qml</file>
+        <file alias="qml/Components/FluProgressRing.qml">../qml/Components/FluProgressRing.qml</file>
+        <file alias="qml/Components/FluTextBox.qml">../qml/Components/FluTextBox.qml</file>
+        <file alias="qml/Components/FluTitleBar.qml">../qml/Components/FluTitleBar.qml</file>
+        <file alias="qml/Components/FluWindow.qml">../qml/Components/FluWindow.qml</file>
+        <file alias="qml/Components/FluSplashScreen.qml">../qml/Components/FluSplashScreen.qml</file>
+        <file alias="qml/Components/FluToast.qml">../qml/Components/FluToast.qml</file>
+        <file alias="kazusa.ico">../qml/kazusa.ico</file>
+        <file alias="kazusa.png">../qml/kazusa.png</file>
+        <file alias="qml/Components/VideoTaskCard.qml">../qml/Components/VideoTaskCard.qml</file>
+        <file alias="qml/Pages/PageDownload.qml">../qml/Pages/PageDownload.qml</file>
+        <file alias="qml/Pages/PageBangumi.qml">../qml/Pages/PageBangumi.qml</file>
+        <file alias="qml/Pages/PageBatch.qml">../qml/Pages/PageBatch.qml</file>
+        <file alias="qml/Pages/PageHistory.qml">../qml/Pages/PageHistory.qml</file>
+        <file alias="qml/Pages/PageSettings.qml">../qml/Pages/PageSettings.qml</file>
+        <!-- 下载完成提示音 (可商用站点获取, 内嵌为默认音效; ASCII 文件名规避 AUTORCC 中文路径编码问题) -->
+        <file alias="sounds/completion.mp3">../qml/completion_default.mp3</file>
+        <!-- 跨页导航点击音 (拍子木 hyoshigi, 可商用站点获取) -->
+        <file alias="sounds/click.mp3">../qml/click_default.mp3</file>
+    </qresource>
+</RCC>

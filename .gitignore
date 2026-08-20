@@ -1,0 +1,54 @@
+# ============================================================
+# BiliCommander 仓库忽略清单
+# 原则: 构建产物 / 运行数据(含凭证) / 本地保留的原型与素材 一律不入库
+# ============================================================
+
+# ---------- 构建产物 ----------
+build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.log
+*.part
+*.tmp
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# ---------- 运行数据（含登录凭证 SESSDATA/bili_jct，切勿入库）----------
+config.json
+history.json
+tasks.json
+config/
+history/
+*.db
+
+# ---------- 旧 Python 原型（本地保留不入库）----------
+core/
+ui/
+archiver.py
+database.py
+debug_start.py
+main.py
+run_qml.py
+启动QML界面.bat
+__pycache__/
+*.pyc
+
+# ---------- 音效素材源（本地保留不入库）----------
+音效/
+
+# ---------- 旧验证归档（本地保留不入库）----------
+legacy_verification/
+test_chain_out/
+
+# ---------- IDE / 系统 ----------
+.vs/
+.vscode/
+.idea/
+*.user
+Thumbs.db
+Desktop.ini
